@@ -6,28 +6,20 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="shortcut icon" href="./Logo/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./Logo/android-chrome-512x512.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/apple-touch-icon.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/favicon-32x32.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="Style.css" />
     <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+  <body class="w3-light-grey" id="hero">
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
@@ -37,25 +29,21 @@
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-    <aside class="box w3-right neon-box2" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Tây Ninh!</p>
-    </aside>
     <header class="w3-top">
-      <nav class="w3-bar w3-white w3-padding w3-card">
+      <nav
+        class="w3-bar w3-white w3-padding w3-card"
+        aria-label="Thanh điều hướng chính"
+      >
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Tây Ninh</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
-          ❮
+          &#10094;
         </button>
         <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
-          ❯
+          &#10095;
         </button>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -81,16 +69,10 @@
           </li>
         </ul>
         <nav
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
           class="w3-animate-left w3-hide-small neon-box"
+          aria-label="Menu cuộn desktop"
         >
-          <menu
-            class="menu-scroll"
-            style="margin: 0; padding: 0; display: flex"
-          >
+          <div class="menu-scroll" role="list">
             <a href="#about" class="w3-bar-item w3-button"
               >LỊCH SỬ HÌNH THÀNH</a
             >
@@ -119,11 +101,48 @@
               class="w3-bar-item w3-button"
               >TRÒ CHƠI</a
             >
-          </menu>
+          </div>
         </nav>
       </nav>
+      <aside
+        class="box w3-right neon-box2"
+        aria-label="Lời chào"
+      >
+        <p class="text">Chào mừng đến với tỉnh Tây Ninh!</p>
+      </aside>
     </header>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu tỉnh Tây Ninh">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://ik.imagekit.io/tvlk/blog/2023/08/go-and-share-dia-diem-du-lich-tay-ninh-01.webp?tr=dpr-2,w-675')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Đông Nam Bộ Việt Nam</p>
+          <h1 class="hero-vl-title">Tây Ninh</h1>
+          <p class="hero-vl-sub">
+            Vùng đất biên giới phía Đông Nam — nơi núi Bà Đen sừng sững
+            giữa đồng bằng, linh thiêng và trù phú, hội tụ văn hoá
+            nhiều dân tộc anh em.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>8.536 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Hơn 3,2 triệu</span>
+              <small>Dân số</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>96</span>
+              <small>Xã, phường</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
           LỊCH SỬ HÌNH THÀNH
@@ -742,122 +761,122 @@
             {
               name: "Huyện Châu Thành (Long An cũ)",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/chau-thanh-long-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/chau-thanh-long-an?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Cần Giuộc",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/can-giuoc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/can-giuoc?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Cần Đước",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/can-duoc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/can-duoc?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Trụ",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-tru?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-tru?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thủ Thừa",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/thu-thua?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/thu-thua?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bến Lức",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/ben-luc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/ben-luc?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Đức Hòa",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/duc-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/duc-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Đức Huệ",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/duc-hue?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/duc-hue?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thạnh Hóa",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/thanh-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/thanh-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Thạnh",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mộc Hóa",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/moc-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/moc-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vĩnh Hưng",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/vinh-hung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/vinh-hung?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Hưng",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-hung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-hung?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Kiến Tường",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/kien-tuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/kien-tuong?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Tân An",
               parent: "Tỉnh Long An cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/long-an/tan-an?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Tây Ninh",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tay-ninh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tay-ninh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Biên",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tan-bien?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tan-bien?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Châu",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tan-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/tan-chau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Dương Minh Châu",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/duong-minh-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/duong-minh-chau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Châu Thành (Tây Ninh cũ)",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/chau-thanh-tay-ninh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/chau-thanh-tay-ninh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Gò Dầu",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/go-dau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/go-dau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bến Cầu",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/ben-cau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/ben-cau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thị xã Trảng Bàng",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/trang-bang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/trang-bang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thị xã Hòa Thành",
               parent: "Tỉnh Tây Ninh cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/hoa-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/tay-ninh/hoa-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -2610,13 +2629,21 @@
                 {
                   label: "GRDP Tây Ninh (tỷ đồng)",
                   data: grdpDataTN,
-                  backgroundColor: "#4CAF50",
+                  backgroundColor: "rgba(26, 107, 66, 0.82)",
+                  borderColor: "#0C3B22",
+                  borderWidth: 1.5,
+                  borderRadius: 5,
+                  borderSkipped: false,
                   yAxisID: "y",
                 },
                 {
                   label: "Tăng trưởng GRDP (%)",
                   data: growthRateTN.map((v) => v * 100),
-                  backgroundColor: "#FF9800",
+                  backgroundColor: "rgba(181, 131, 26, 0.82)",
+                  borderColor: "#8A640F",
+                  borderWidth: 1.5,
+                  borderRadius: 5,
+                  borderSkipped: false,
                   yAxisID: "y1",
                 },
               ],
@@ -2624,25 +2651,38 @@
             options: {
               responsive: true,
               plugins: {
-                legend: { position: "top" },
+                legend: {
+                  position: "top",
+                  labels: { color: "#3D2C10", font: { family: "Open Sans", weight: 600 } },
+                },
                 title: {
                   display: true,
                   text: "GRDP và Tăng trưởng kinh tế Tây Ninh (2016–2024)",
+                  color: "#1F2B1F",
+                  font: { family: "Montserrat", weight: 700, size: 14 },
+                  padding: { bottom: 16 },
                 },
               },
               scales: {
                 y: {
                   beginAtZero: false,
                   position: "left",
-                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                  title: { display: true, text: "GRDP (tỷ đồng)", color: "#1A6B42" },
+                  ticks: { color: "#7A8A7A" },
+                  grid: { color: "rgba(210,221,210,0.6)" },
                 },
                 y1: {
                   beginAtZero: true,
                   position: "right",
                   grid: { drawOnChartArea: false },
-                  title: { display: true, text: "Tăng trưởng (%)" },
+                  title: { display: true, text: "Tăng trưởng (%)", color: "#B5831A" },
+                  ticks: { color: "#7A8A7A" },
                 },
-                x: { title: { display: true, text: "Năm" } },
+                x: {
+                  title: { display: true, text: "Năm", color: "#3D2C10" },
+                  ticks: { color: "#7A8A7A" },
+                  grid: { display: false },
+                },
               },
             },
           });
@@ -4886,9 +4926,20 @@
       </section>
       <hr />
     </main>
-    <footer class="w3-center w3-light-grey w3-padding-32">
+    <footer class="w3-center w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    <script>
+      
+      (function () {
+        var btn = document.querySelector('.scroll-top-button');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+          btn.classList.toggle('show', window.scrollY > 300);
+        }, { passive: true });
+      })();
+    </script>
+    <script src="animations.js"></script>
   </body>
 </html>
 
